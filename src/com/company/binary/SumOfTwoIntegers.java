@@ -1,4 +1,4 @@
-package com.company.Binary;
+package com.company.binary;
 
 public class SumOfTwoIntegers {
 

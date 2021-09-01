@@ -1,6 +1,4 @@
-package com.company.DataStructures;
-
-import java.util.Arrays;
+package com.company.dataStructures;
 
 public class Stack {
 

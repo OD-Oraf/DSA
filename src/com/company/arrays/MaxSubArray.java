@@ -1,7 +1,4 @@
-package com.company.Arrays;
-
-import java.lang.reflect.Array;
-import java.util.Arrays;
+package com.company.arrays;
 
 public class MaxSubArray {
 
