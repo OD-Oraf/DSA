@@ -3,12 +3,13 @@ package com.company.arrays;
 public class ContainerWithMostWater {
 
     static int maxArea(int[] height){
-        //2 pointer method
+        //2 pointer method, check each height
         int maxArea = 0;
         int p1 = 0;
         int p2 = height.length - 1;
         while(p1 < p2){
-            //for area equation can only use the smallest height
+            //Important
+            //Smallest height for the area  equation
             //width is going to be dist between both pointers
             if (height[p1] < height[p2]){
                 maxArea = Math.max(maxArea, height[p1]*(p2-p1));
