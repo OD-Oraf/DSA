@@ -2,6 +2,7 @@ package com.company.dataStructures;
 
 public class Stack {
 
+    //Array Implementation
     int capacity = 1000;
     int top = -1;
     int[] arr = new int[capacity];
@@ -17,6 +18,7 @@ public class Stack {
         return false;
     }
 
+    //Add Element into stack and move top index up one to match new addition
     public void push(int val){
         if (top == capacity){
             System.out.println("Stack overflow");
@@ -27,6 +29,7 @@ public class Stack {
 
     }
 
+    //Look W/O removing top element
     public void peek(){
         if (top < 0){
             System.out.println("Empty stack");
@@ -35,6 +38,7 @@ public class Stack {
         System.out.println("Current top value is: " + arr[top]);
     }
 
+    //Remove element from the top of stack
     public void pop(){
         if (top < 0){
             System.out.println("Empty Stack");
