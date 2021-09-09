@@ -1,7 +1,4 @@
-package com.company.javafeatures;
-
-import java.sql.SQLOutput;
-import java.util.*;
+package com.company.collections;
 
 public class Greeter {
 
