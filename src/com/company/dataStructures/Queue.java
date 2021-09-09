@@ -2,6 +2,7 @@ package com.company.dataStructures;
 
 public class Queue {
 
+    //Array implementation
     int front, rear, size;
     int capacity;
     int array[];
@@ -35,6 +36,7 @@ public class Queue {
         System.out.println(item + " enqueued to queue");
     }
 
+    //Remove elements from front(leftmost side) of array
     void dequeue(){
         if(isEmpty(this)){
             System.out.println("This queue is empty");
@@ -47,7 +49,7 @@ public class Queue {
 
     int front(){
         if (isEmpty(this)){
-            System.out.println("THis array is empty");
+            System.out.println("This array is empty");
             return Integer.MIN_VALUE;
         }
         return this.array[this.front];
@@ -55,7 +57,7 @@ public class Queue {
 
     int rear(){
         if (isEmpty(this)){
-            System.out.println("THis array is empty");
+            System.out.println("This array is empty");
             return Integer.MIN_VALUE;
         }
         return this.array[this.rear];
