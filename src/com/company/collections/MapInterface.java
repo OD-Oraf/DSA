@@ -18,7 +18,5 @@ public class MapInterface {
             System.out.println(m.getKey() + " " + m.getValue());
         }
 
-
-
     }
 }
