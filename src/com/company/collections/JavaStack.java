@@ -8,7 +8,7 @@ public class JavaStack {
         //Stack empty() method
         boolean result = stk.empty();
 
-        System.out.println("Is the stack empoty? " + result);
+        System.out.println("Is the stack empty? " + result);
         //Stack push() method
         stk.push(78);
         stk.push(113);
