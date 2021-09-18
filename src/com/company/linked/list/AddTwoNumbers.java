@@ -1,4 +1,4 @@
-package com.company.linkedList;
+package com.company.linked.list;
 
 //Leetcode 2
 public class AddTwoNumbers {
