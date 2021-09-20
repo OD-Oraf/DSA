@@ -21,8 +21,7 @@ public class Polymorphism {
     the JVM doesn't know which one to choose
      */
 
-    //It's possible to overload the main method but the JVM only calls the one which recieves String[] args.
-
+    //It's possible to overload the main method but the JVM only calls the one which receives String[] args.
     public static void main(String args){
         System.out.println("main with String");
     }
@@ -30,7 +29,29 @@ public class Polymorphism {
         System.out.println("main without args");
     }
 
-    public static void main(String[] args){
 
+
+    //Method Overriding
+    static class Vehicle{
+        void run(){
+            System.out.println("Vehicle is running");
+        }
+    }
+    static class Bike extends Vehicle{
+
+    }
+    static class MotorBike extends Vehicle{
+        void run(){
+            //Overrides Vehicle run
+            System.out.println("Motorbike is running");
+        }
+
+    }
+
+    public static void main(String[] args){
+        MotorBike bike = new MotorBike();
+        bike.run();
+
+        System.out.println(1984-1967);
     }
 }
