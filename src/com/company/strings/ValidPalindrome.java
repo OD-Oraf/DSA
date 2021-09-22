@@ -17,8 +17,7 @@ public class ValidPalindrome {
                 j -= 1;
                 continue;
             }
-            if (Character.toLowerCase(s.charAt(i)) !=
-                    Character.toLowerCase(s.charAt(j))) {
+            if (Character.toLowerCase(s.charAt(i)) != Character.toLowerCase(s.charAt(j))) {
 //                System.out.println(s.charAt(i) + " " + s.charAt(j));
 //                System.out.println(i + " " + j);
                 return false;
