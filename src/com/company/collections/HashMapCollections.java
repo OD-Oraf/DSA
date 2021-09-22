@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 
-public class MapInterface {
+public class HashMapCollections {
     public static void main(String[] args){
         HashMap<Integer, String> map = new HashMap<>();
         map.put(1, "Andy");
@@ -17,6 +17,8 @@ public class MapInterface {
         for (Map.Entry m : map.entrySet()){
             System.out.println(m.getKey() + " " + m.getValue());
         }
+
+
 
     }
 }

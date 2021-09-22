@@ -1,5 +1,6 @@
 package com.company.collections;
 
+import java.util.HashSet;
 import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
 import java.util.Set;
@@ -10,7 +11,7 @@ public class SetVsMap {
 
         //Set Interface
         //Basically array of unique values
-        Set<String> marvelMovies = new LinkedHashSet<>();
+        HashSet<String> marvelMovies = new LinkedHashSet<>();
         marvelMovies.add("Captain Marvel");
         marvelMovies.add("Thor: Ragnarok");
         marvelMovies.add("Captain America: The Winter Soldier");

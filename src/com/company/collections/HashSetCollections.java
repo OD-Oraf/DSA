@@ -3,7 +3,7 @@ package com.company.collections;
 import java.util.HashSet;
 import java.util.Iterator;
 
-public class HashSetCollection {
+public class HashSetCollections {
     public static void main(String[] args){
         // Inherits AbstractSet class and implements Set interface
         //Unique Elements only

@@ -48,10 +48,30 @@ public class Polymorphism {
 
     }
 
+    //Covariant Return Type
+    //When overriding you can return a subclass type of original return type
+    //This example returns A but, you can change the return type to B1 because it is a child class of A
+    static class A{
+        A get(){
+            return this;
+        }
+    }
+
+    static class B1 extends A {
+        @Override
+        B1 get() {
+            return this;
+        }
+        void message(){
+            System.out.println("Covariant return type");
+        }
+    }
+
     public static void main(String[] args){
         MotorBike bike = new MotorBike();
         bike.run();
 
         System.out.println(1984-1967);
+        new B1().get().message();
     }
 }

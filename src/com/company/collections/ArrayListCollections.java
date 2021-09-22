@@ -2,10 +2,11 @@ package com.company.collections;
 
 import java.util.*;
 
-public class ListInterface {
+public class ArrayListCollections {
     public static void main(String[] args){
         //Array list
-        List<String> list = new ArrayList<>();
+        ArrayList<String> list = new java.util.ArrayList<>();
+
         list.add("mango");
         list.add("apple");
         list.add("bananas");
@@ -17,7 +18,7 @@ public class ListInterface {
         List<String> langs = Arrays.asList(arr);
 
         //Sorting array
-        List<Integer> nums = new ArrayList<Integer>();
+        ArrayList<Integer> nums = new java.util.ArrayList<Integer>();
         nums.add(21);
         nums.add(11);
         nums.add(51);
@@ -29,7 +30,7 @@ public class ListInterface {
 
 
         //Iterator
-        List<String> names = new ArrayList<>();
+        ArrayList<String> names = new java.util.ArrayList<>();
         names.add("James");
         names.add("Marco");
         names.add("Kristina");
