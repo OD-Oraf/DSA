@@ -15,7 +15,6 @@ public class ComparatorInterface {
             this.age = age;
         }
 
-
         @Override
         public String toString() {
             return "Student{" +
@@ -26,11 +25,10 @@ public class ComparatorInterface {
         }
     }
 
-    static class AgeComparator implements Comparator{
+    //Sorts by Age
+    static class AgeComparator implements Comparator<Student>{
         @Override
-        public int compare(Object o1, Object o2){
-            Student s1 = (Student)o1;
-            Student s2 = (Student)o2;
+        public int compare(Student s1, Student s2){
 
             if(s1.age == s2.age){
                 return 0;
@@ -42,12 +40,10 @@ public class ComparatorInterface {
         }
     }
 
-    static class NameComparator implements Comparator{
+    //Sorts ny Name
+    static class NameComparator implements Comparator<Student>{
         @Override
-        public int compare(Object o1, Object o2){
-            Student s1 = (Student)o1;
-            Student s2 = (Student)o2;
-
+        public int compare(Student s1, Student s2){
             return s1.name.compareTo(s2.name);
         }
     }
@@ -61,10 +57,14 @@ public class ComparatorInterface {
 
         System.out.println("Sorting by Name");
         Collections.sort(al, new NameComparator());
-        Iterator itr = al.iterator();
-        while(itr.hasNext()){
-            Student st = (Student)itr.next();
-            System.out.println(st.id+" "+st.name+" "+st.age+" ");
+        for(Student st : al){
+            System.out.println(st);
+        }
+
+        System.out.println("Sorting by Age");
+        Collections.sort(al, new AgeComparator());
+        for(Student st : al){
+            System.out.println(st);
         }
 
 
