@@ -13,12 +13,18 @@ public class HashMapCollections {
         map.put(2, "Jack");
         map.put(6, "Armin");
 
+        /**entrySet() method
+        * Makes set out of map elements
+        */
+
+        System.out.println("Printed Set");
+        System.out.println(map.entrySet());
+        System.out.println("");
+
         //Traverse map
         for (Map.Entry m : map.entrySet()){
             System.out.println(m.getKey() + " " + m.getValue());
         }
-
-
 
     }
 }
