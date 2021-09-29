@@ -9,8 +9,8 @@ import java.util.*;
 public class JavaGenerics {
     /*Type Parameters
     *
-    * T - Type
-    * E - Element(elements in list)
+    * T - Type (Classes Interfaces)
+    * E - Element(String, Integer, Objects)
     * K - Key
     * N - Number
     * V - Value

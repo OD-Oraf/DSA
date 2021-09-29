@@ -7,8 +7,6 @@ public class ValidPalindrome {
         int i = 0;
         int j = s.length() - 1;
         while (i < j) {
-            //skip whitespace
-            //Continues skips iteration so we dont compare letter to non-letter
             if (!Character.isLetterOrDigit(s.charAt(i))) {
                 i += 1;
                 continue;
@@ -18,12 +16,8 @@ public class ValidPalindrome {
                 continue;
             }
             if (Character.toLowerCase(s.charAt(i)) != Character.toLowerCase(s.charAt(j))) {
-//                System.out.println(s.charAt(i) + " " + s.charAt(j));
-//                System.out.println(i + " " + j);
                 return false;
             }
-//            System.out.println(s.charAt(i) + " " + s.charAt(j));
-//            System.out.println(i + " " + j);]
             i += 1;
             j -= 1;
         }

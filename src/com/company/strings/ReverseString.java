@@ -15,7 +15,8 @@ public class ReverseString {
 
 
 
-        //INPLACE SOLUTION
+        //IN PLACE SOLUTION
+        //2 pointer methods
         //Use temp variable
         String string = "cats";
         char[] s = string.toCharArray();
@@ -32,7 +33,5 @@ public class ReverseString {
             p2 -= 1;
         }
         System.out.println("After reverse: " + new String(s));
-
-
     }
 }
