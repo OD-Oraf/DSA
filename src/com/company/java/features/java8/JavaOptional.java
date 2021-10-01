@@ -29,6 +29,5 @@ public class JavaOptional {
         System.out.println("Filtered value: " + value.filter((s) -> s.equals("Abc")));
         System.out.println("Filtered value: " + value.filter((s) -> s.equals("Java optional class")));
 
-
     }
 }

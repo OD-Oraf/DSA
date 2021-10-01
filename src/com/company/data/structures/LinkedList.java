@@ -20,7 +20,7 @@ public class LinkedList {
 
         //Create new node
         Node newNode = new Node(val);
-        if (this.head == null){
+        if(this.head == null){
             this.head = newNode;
         } else {
             //point new node to current head
