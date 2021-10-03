@@ -1,6 +1,6 @@
 package com.company.syntax;
 
-public class JavaArray {
+public class ArraySyntax {
     public static void main(String[] args){
 
         //Declaration
