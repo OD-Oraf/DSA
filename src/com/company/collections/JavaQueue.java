@@ -1,5 +1,6 @@
 package com.company.collections;
 
+import java.util.Collections;
 import java.util.Iterator;
 import java.util.PriorityQueue;
 import java.util.Queue;
@@ -59,7 +60,6 @@ public class JavaQueue {
         bookQueue.add(b1);
         bookQueue.add(b2);
         bookQueue.add(b3);
-
 
         //Traverse
         System.out.println("Queue before poll");

@@ -7,7 +7,6 @@ import java.util.Map;
 public class TwoSum {
 
     //2 pointers Solution n^2 time complexity
-
     public static int[] twoSumTwoPoint(int[] nums, int target){
         int p1;
         int p2;
