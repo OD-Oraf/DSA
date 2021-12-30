@@ -1,4 +1,4 @@
-package com.company.data.structures;
+package com.company.datastructures;
 
 public class LinkedList {
 

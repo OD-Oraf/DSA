@@ -1,4 +1,4 @@
-package com.company.linked.list;
+package com.company.linkedlist;
 
 public class LinkedListCycle {
     static class Node{

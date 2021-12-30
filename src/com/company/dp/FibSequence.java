@@ -1,4 +1,4 @@
-package com.company.dynamic.programming;
+package com.company.dp;
 
 public class FibSequence {
 
