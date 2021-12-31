@@ -25,7 +25,7 @@ public class AlienDictionary {
         for (int i = 0; i < order.length(); i++){
             /*order the positions of the alien alphabet
             ||-----------------------------------------------------||
-            // New Alphabet is H A C B
+            // New Alphabet is  H A C B
             // Regular Alphabet A B C D E F G H O J K ------
             // New alphabet    :1 3  2        0
             ||------------------------------------------------------||
