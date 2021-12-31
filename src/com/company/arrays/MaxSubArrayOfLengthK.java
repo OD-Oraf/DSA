@@ -1,17 +1,17 @@
 package com.company.arrays;
 
-public class MaxSubArray {
+public class MaxSubArrayOfLengthK {
 
     public static void main(String[] args) {
         int arr[] = { 1, 4, 2, 10, 2, 3, 1, 0, 20 };
         int subArrayLen = 4;
         int arrLen = arr.length;
 
-        System.out.println(maxSubArray(arr,arrLen,subArrayLen));
+        System.out.println(maxSubArrayK(arr,arrLen,subArrayLen));
 
     }
 
-    public static int maxSubArray(int arr[], int len, int k){
+    public static int maxSubArrayK(int arr[], int len, int k){
 
         int max = 0;
         //if len of array is shorter than subarray its invalid input
