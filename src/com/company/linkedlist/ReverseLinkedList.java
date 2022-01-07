@@ -22,7 +22,20 @@ public class ReverseLinkedList {
     }
 
     static ListNode reverseList (ListNode head) {
-        return head;
+
+        ListNode newHead = null;
+        ListNode curr = head;
+
+        while (curr != null) {
+            //
+            ListNode temp = curr.next;
+            curr.next = newHead;
+            newHead = curr;
+
+            curr = temp;
+        }
+
+        return newHead;
 
     }
     public static void main(String[] args) {
@@ -38,7 +51,7 @@ public class ReverseLinkedList {
         node3.next = node4;
         node4.next = node5;
 
-        printList(node1);
+        printList(reverseList(node1));
 
 
 
