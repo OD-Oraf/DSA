@@ -10,7 +10,7 @@ public class Scratch {
         int [] my2DArray;
         my2DArray = new int[rows];
 
-        System.out.println(my2DArray);
+        System.out.println(Arrays.toString(my2DArray));
 
 
     }
