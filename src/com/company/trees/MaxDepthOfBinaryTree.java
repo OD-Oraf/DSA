@@ -22,7 +22,7 @@ public class MaxDepthOfBinaryTree {
 
             if (leftDepth > rightDepth){
                 return leftDepth + 1;
-            }else{
+            }else {
                 return rightDepth + 1;
             }
         }
