@@ -6,7 +6,6 @@ public class MergeIntervals {
 
     public static int[][] mergeIntervals(int[][] intervals) {
         /* Steps:
-
             Sort intervals by starting value
             Push first interval into stack
 
@@ -29,17 +28,8 @@ public class MergeIntervals {
                 list.add(intervals[i]);
             } else {
                 list.getLast()[1] = Math.max(list.getLast()[1], intervals[i][1]);
-
             }
-
-
-
-
-
-
         }
-
-
         return list.toArray(new int[list.size()][]);
 
     }
