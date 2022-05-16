@@ -5,14 +5,6 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-    TreeNode(int val) {
-        this.val = val;
-    }
-}
 public class LevelOrderTraversal {
     public static ArrayList<ArrayList<Integer>> traverse(TreeNode root) {
         ArrayList<ArrayList<Integer>> result = new ArrayList<>();
