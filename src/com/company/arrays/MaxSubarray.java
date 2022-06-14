@@ -12,7 +12,6 @@ public class MaxSubarray {
             bestSum = Math.max(bestSum, currentSum);
 
         }
-
         return bestSum;
     }
 
