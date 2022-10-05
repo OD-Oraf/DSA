@@ -4,14 +4,12 @@ import java.util.Arrays;
 
 public class Scratch {
     public static void main(String[] args){
-        int rows = 3;
-        int columns = 4;
+        String str = "hello";
+        char[] charArr = str.toCharArray();
 
-        int [] my2DArray;
-        my2DArray = new int[rows];
-
-        System.out.println(my2DArray);
-
+        for (char c : charArr) {
+            System.out.println(c);
+        }
 
     }
 }
