@@ -17,28 +17,31 @@ public class MergeIntervals {
 
             Stack of merged intervals
         */
+        if (intervals.length <= 1) {
+            return intervals;
+        }
 
         Arrays.sort(intervals, (a, b) -> Integer.compare(a[0], b[0]));
-        LinkedList<int[]> list = new LinkedList<>();
-        list.add(intervals[0]);
+        LinkedList<int[]> merged = new LinkedList<>();
 
-        for (int i = 1; i < intervals.length; i++) {
+
+        for (int i = 0; i < intervals.length; i++) {
             // Overlap
-            if (list.isEmpty() || list.getLast()[1] < intervals[i][0]) {
-                list.add(intervals[i]);
+            if (merged.isEmpty() || merged.getLast()[1] < intervals[i][0]) {
+                merged.add(intervals[i]);
             } else {
-                list.getLast()[1] = Math.max(list.getLast()[1], intervals[i][1]);
+                merged.getLast()[1] = Math.max(merged.getLast()[1], intervals[i][1]);
             }
         }
-        return list.toArray(new int[list.size()][]);
+        return merged.toArray(new int[merged.size()][]);
 
     }
 
-    static void printArray(int[][] intervals) {
-        for (int[] interval: intervals) {
-            System.out.println(Arrays.toString(interval));
-        }
-    }
+//    static void printArray(int[][] intervals) {
+//        for (int[] interval: intervals) {
+//            System.out.println(Arrays.toString(interval));
+//        }
+//    }
     public static void main(String[] args) {
 
         int[][] intervals = {
@@ -48,7 +51,12 @@ public class MergeIntervals {
                 {15,18}
         };
 
-        printArray(mergeIntervals(intervals));
+//        printArray(mergeIntervals(intervals));
+        int [][] merged = mergeIntervals(intervals);
+        for (int[] interval : merged) {
+            System.out.println(Arrays.toString(interval));
+
+        }
 //        printArray(intervals);
 
 

@@ -49,7 +49,7 @@ public class ValidPalindrome {
     }
 
     public static void main(String[] args){
-        String test = "A man, a plan, a canal: Panama";
+        String test = ",P";
         System.out.println(isPalindrome1(test));
     }
 
