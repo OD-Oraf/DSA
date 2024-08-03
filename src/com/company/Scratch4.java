@@ -10,8 +10,8 @@ public class Scratch4 {
 //        sb.append("w");
 //        sb.setLength(1);
 //        System.out.println(sb.toString());
-        String s = "hello";
-        System.out.println(s.substring(0,3).length());
+        String s = "leetcode";
+        System.out.println(s.startsWith("code                                                                                                               ---",7));
 //        System.out.println(Integer.bitCount(7));
 
 

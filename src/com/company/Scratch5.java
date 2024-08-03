@@ -12,7 +12,6 @@ public class Scratch5 {
         for (int num : nums) {
             maxHeap.add(num);
 //            System.out.println(maxHeap.peek());
-
         }
 
         Integer[] queueToArray = maxHeap.toArray(new Integer[maxHeap.size()]);
